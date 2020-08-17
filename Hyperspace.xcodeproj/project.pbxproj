@@ -167,6 +167,10 @@
 		60D6C440201D188B00B3B012 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D6C43F201D188B00B3B012 /* ViewController.swift */; };
 		60D6C443201D188B00B3B012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D6C441201D188B00B3B012 /* Main.storyboard */; };
 		60D6C445201D188B00B3B012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60D6C444201D188B00B3B012 /* Assets.xcassets */; };
+		A330A87E24EB251D00761951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330A87D24EB251D00761951 /* AppDelegate.swift */; };
+		A330A88024EB251D00761951 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330A87F24EB251D00761951 /* ViewController.swift */; };
+		A330A88224EB251F00761951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A330A88124EB251F00761951 /* Assets.xcassets */; };
+		A330A88524EB251F00761951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A330A88324EB251F00761951 /* Main.storyboard */; };
 		B4255B59246E528C009B6D6A /* EncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4255B57246E525F009B6D6A /* EncodingTests.swift */; };
 		B4255B5A246E528D009B6D6A /* EncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4255B57246E525F009B6D6A /* EncodingTests.swift */; };
 		B469328F2413539700D2B650 /* TransportResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469328E2413539700D2B650 /* TransportResult.swift */; };
@@ -427,6 +431,13 @@
 		60D6C444201D188B00B3B012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60D6C446201D188B00B3B012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60EB8FDB1FF59FB000AC0B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A330A87B24EB251D00761951 /* Hyperspace-macOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hyperspace-macOSExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A330A87D24EB251D00761951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A330A87F24EB251D00761951 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A330A88124EB251F00761951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A330A88424EB251F00761951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A330A88624EB251F00761951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A330A88724EB251F00761951 /* Hyperspace_macOSExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hyperspace_macOSExample.entitlements; sourceTree = "<group>"; };
 		B4255B57246E525F009B6D6A /* EncodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingTests.swift; sourceTree = "<group>"; };
 		B469328E2413539700D2B650 /* TransportResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportResult.swift; sourceTree = "<group>"; };
 		B476477424136071003C97E9 /* Request.URLRequestCreationStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.URLRequestCreationStrategy.swift; sourceTree = "<group>"; };
@@ -503,6 +514,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4C32C58201EA4BC00FC82C1 /* Hyperspace.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A330A87824EB251D00761951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +637,7 @@
 				60D6C43B201D188B00B3B012 /* Hyperspace-tvOSExample.app */,
 				6083678B201D1AF400007247 /* Hyperspace-watchOSExample.app */,
 				60836797201D1AF500007247 /* Hyperspace-watchOSExample Extension.appex */,
+				A330A87B24EB251D00761951 /* Hyperspace-macOSExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -818,6 +837,7 @@
 				60326018201D1F1F008CEFC8 /* Playground */,
 				60D6C432201D16F000B3B012 /* Shared */,
 				60D6C420201D156500B3B012 /* Hyperspace-iOSExample */,
+				A330A87C24EB251D00761951 /* Hyperspace-macOSExample */,
 				60D6C43C201D188B00B3B012 /* Hyperspace-tvOSExample */,
 				6083678C201D1AF400007247 /* Hyperspace-watchOSExample */,
 				6083679B201D1AF500007247 /* Hyperspace-watchOSExample Extension */,
@@ -852,6 +872,19 @@
 				60EB8FDB1FF59FB000AC0B55 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A330A87C24EB251D00761951 /* Hyperspace-macOSExample */ = {
+			isa = PBXGroup;
+			children = (
+				A330A87D24EB251D00761951 /* AppDelegate.swift */,
+				A330A87F24EB251D00761951 /* ViewController.swift */,
+				A330A88124EB251F00761951 /* Assets.xcassets */,
+				A330A88324EB251F00761951 /* Main.storyboard */,
+				A330A88624EB251F00761951 /* Info.plist */,
+				A330A88724EB251F00761951 /* Hyperspace_macOSExample.entitlements */,
+			);
+			path = "Hyperspace-macOSExample";
 			sourceTree = "<group>";
 		};
 		CB0DE06121E7E5EF00661F0E /* Futures */ = {
@@ -1069,13 +1102,30 @@
 			productReference = 60D6C43B201D188B00B3B012 /* Hyperspace-tvOSExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A330A87A24EB251D00761951 /* Hyperspace-macOSExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A330A88A24EB251F00761951 /* Build configuration list for PBXNativeTarget "Hyperspace-macOSExample" */;
+			buildPhases = (
+				A330A87724EB251D00761951 /* Sources */,
+				A330A87824EB251D00761951 /* Frameworks */,
+				A330A87924EB251D00761951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hyperspace-macOSExample";
+			productName = "Hyperspace-macOSExample";
+			productReference = A330A87B24EB251D00761951 /* Hyperspace-macOSExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		60AC82AD1FF588D500120172 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Bottle Rocket Studios";
 				TargetAttributes = {
@@ -1123,6 +1173,10 @@
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
+					A330A87A24EB251D00761951 = {
+						CreatedOnToolsVersion = 11.5;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 60AC82B01FF588D500120172 /* Build configuration list for PBXProject "Hyperspace" */;
@@ -1147,6 +1201,7 @@
 				60AC82D41FF5899800120172 /* Hyperspace-watchOS */,
 				6083678A201D1AF400007247 /* Hyperspace-watchOSExample */,
 				60836796201D1AF500007247 /* Hyperspace-watchOSExample Extension */,
+				A330A87A24EB251D00761951 /* Hyperspace-macOSExample */,
 			);
 		};
 /* End PBXProject section */
@@ -1248,6 +1303,15 @@
 				60D6C445201D188B00B3B012 /* Assets.xcassets in Resources */,
 				0EBF9B23246F404D00E990DC /* jsonplaceholder.der in Resources */,
 				60D6C443201D188B00B3B012 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A330A87924EB251D00761951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A330A88224EB251F00761951 /* Assets.xcassets in Resources */,
+				A330A88524EB251F00761951 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1591,6 +1655,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A330A87724EB251D00761951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A330A88024EB251D00761951 /* ViewController.swift in Sources */,
+				A330A87E24EB251D00761951 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1665,6 +1738,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				60D6C442201D188B00B3B012 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A330A88324EB251F00761951 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A330A88424EB251F00761951 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -2163,6 +2244,49 @@
 			};
 			name = Release;
 		};
+		A330A88824EB251F00761951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = "Examples/Hyperspace-macOSExample/Hyperspace_macOSExample.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6SP7M2M5S3;
+				INFOPLIST_FILE = "Examples/Hyperspace-macOSExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRIVATE_HEADERS_FOLDER_PATH = "Examples/$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.Hyperspace-macOSExample.Hyperspace-macOSExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A330A88924EB251F00761951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = "Examples/Hyperspace-macOSExample/Hyperspace_macOSExample.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6SP7M2M5S3;
+				INFOPLIST_FILE = "Examples/Hyperspace-macOSExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_FAST_MATH = YES;
+				PRIVATE_HEADERS_FOLDER_PATH = "Examples/$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.Hyperspace-macOSExample.Hyperspace-macOSExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2252,6 +2376,15 @@
 			buildConfigurations = (
 				60D6C448201D188B00B3B012 /* Debug */,
 				60D6C449201D188B00B3B012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A330A88A24EB251F00761951 /* Build configuration list for PBXNativeTarget "Hyperspace-macOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A330A88824EB251F00761951 /* Debug */,
+				A330A88924EB251F00761951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
