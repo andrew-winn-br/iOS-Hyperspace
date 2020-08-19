@@ -176,6 +176,31 @@
 		A39530AE24EDC80B00E668A7 /* Hyperspace_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = A395309E24EDC80B00E668A7 /* Hyperspace_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A39530B124EDC80B00E668A7 /* Hyperspace_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A395309C24EDC80B00E668A7 /* Hyperspace_macOS.framework */; };
 		A39530B224EDC80B00E668A7 /* Hyperspace_macOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A395309C24EDC80B00E668A7 /* Hyperspace_macOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A39530DD24EDC99600E668A7 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39530DC24EDC99600E668A7 /* BrightFutures.framework */; };
+		A39530E024EDCA9700E668A7 /* Request+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B476477624137A75003C97E9 /* Request+Decodable.swift */; };
+		A39530E124EDCA9700E668A7 /* JSONCoder+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E81B4A120ADE0E100DC1F4E /* JSONCoder+Container.swift */; };
+		A39530E224EDCA9700E668A7 /* CodableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AC83441FF596B600120172 /* CodableContainer.swift */; };
+		A39530E324EDCA9700E668A7 /* URL+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AC833F1FF596B600120172 /* URL+Additions.swift */; };
+		A39530E424EDCA9700E668A7 /* URLQueryItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AC83401FF596B600120172 /* URLQueryItem+Extensions.swift */; };
+		A39530E524EDCA9700E668A7 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AC83421FF596B600120172 /* HTTP.swift */; };
+		A39530E624EDCA9700E668A7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AC83461FF596B600120172 /* Request.swift */; };
+		A39530E724EDCA9700E668A7 /* Request.URLRequestCreationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B476477424136071003C97E9 /* Request.URLRequestCreationStrategy.swift */; };
+		A39530E824EDCA9700E668A7 /* URLQueryParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDC1DB20AB3B3E00ABF991 /* URLQueryParameterEncoder.swift */; };
+		A39530E924EDCA9700E668A7 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEBA729226FA482007980C1 /* AnyError.swift */; };
+		A39530EA24EDCA9700E668A7 /* RecoveryStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E81B49820AC8E0B00DC1F4E /* RecoveryStrategy.swift */; };
+		A39530EB24EDCA9700E668A7 /* NetworkActivityIndicatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C32C2B201E9F2D00FC82C1 /* NetworkActivityIndicatable.swift */; };
+		A39530EC24EDCA9700E668A7 /* TransportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AC834C1FF596B600120172 /* TransportService.swift */; };
+		A39530ED24EDCA9700E668A7 /* TransportResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469328E2413539700D2B650 /* TransportResult.swift */; };
+		A39530EE24EDCA9700E668A7 /* Transporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AC834A1FF596B600120172 /* Transporting.swift */; };
+		A39530EF24EDCA9700E668A7 /* TransportSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AC834B1FF596B600120172 /* TransportSession.swift */; };
+		A39530F024EDCA9700E668A7 /* BackendServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AC834E1FF596B600120172 /* BackendServiceProtocol.swift */; };
+		A39530F124EDCA9700E668A7 /* BackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AC834F1FF596B600120172 /* BackendService.swift */; };
+		A39530F224EDCA9800E668A7 /* AuthenticationChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF57B962203CD0B00484C01 /* AuthenticationChallenge.swift */; };
+		A39530F324EDCA9800E668A7 /* TrustConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B3AE2220244B100D65DB5 /* TrustConfiguration.swift */; };
+		A39530F424EDCA9800E668A7 /* TrustValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B3ADE22023C0D00D65DB5 /* TrustValidator.swift */; };
+		A39530F524EDCA9800E668A7 /* CertificateHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF57B7F22028F0000484C01 /* CertificateHasher.swift */; };
+		A39530F624EDCA9800E668A7 /* TrustValidatingTransportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFB54482204CBE400949F24 /* TrustValidatingTransportService.swift */; };
+		A39530F724EDCA9800E668A7 /* BackendService+Futures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0DE06221E7E62500661F0E /* BackendService+Futures.swift */; };
 		B4255B59246E528C009B6D6A /* EncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4255B57246E525F009B6D6A /* EncodingTests.swift */; };
 		B4255B5A246E528D009B6D6A /* EncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4255B57246E525F009B6D6A /* EncodingTests.swift */; };
 		B469328F2413539700D2B650 /* TransportResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469328E2413539700D2B650 /* TransportResult.swift */; };
@@ -481,6 +506,7 @@
 		A39530A424EDC80B00E668A7 /* Hyperspace-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hyperspace-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39530AB24EDC80B00E668A7 /* Hyperspace_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hyperspace_macOSTests.swift; sourceTree = "<group>"; };
 		A39530AD24EDC80B00E668A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39530DC24EDC99600E668A7 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/Mac/BrightFutures.framework; sourceTree = "<group>"; };
 		B4255B57246E525F009B6D6A /* EncodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingTests.swift; sourceTree = "<group>"; };
 		B469328E2413539700D2B650 /* TransportResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportResult.swift; sourceTree = "<group>"; };
 		B476477424136071003C97E9 /* Request.URLRequestCreationStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.URLRequestCreationStrategy.swift; sourceTree = "<group>"; };
@@ -572,6 +598,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A39530DD24EDC99600E668A7 /* BrightFutures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,6 +851,7 @@
 		60D6C3E6201CD77400B3B012 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A39530DC24EDC99600E668A7 /* BrightFutures.framework */,
 				125DD8FC22F0C52F00AFA88B /* BrightFutures.framework */,
 				125DD8FA22F0C52700AFA88B /* BrightFutures.framework */,
 				125DD8F822F0C51900AFA88B /* BrightFutures.framework */,
@@ -1214,10 +1242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A39530B824EDC80B00E668A7 /* Build configuration list for PBXNativeTarget "Hyperspace-macOS" */;
 			buildPhases = (
-				A395309724EDC80B00E668A7 /* Headers */,
 				A395309824EDC80B00E668A7 /* Sources */,
 				A395309924EDC80B00E668A7 /* Frameworks */,
+				A395309724EDC80B00E668A7 /* Headers */,
 				A395309A24EDC80B00E668A7 /* Resources */,
+				A39530F824EDCB4A00E668A7 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -1612,6 +1641,24 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		A39530F824EDCB4A00E668A7 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1821,6 +1868,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A39530E324EDCA9700E668A7 /* URL+Additions.swift in Sources */,
+				A39530E024EDCA9700E668A7 /* Request+Decodable.swift in Sources */,
+				A39530E424EDCA9700E668A7 /* URLQueryItem+Extensions.swift in Sources */,
+				A39530E524EDCA9700E668A7 /* HTTP.swift in Sources */,
+				A39530F224EDCA9800E668A7 /* AuthenticationChallenge.swift in Sources */,
+				A39530ED24EDCA9700E668A7 /* TransportResult.swift in Sources */,
+				A39530E824EDCA9700E668A7 /* URLQueryParameterEncoder.swift in Sources */,
+				A39530E224EDCA9700E668A7 /* CodableContainer.swift in Sources */,
+				A39530F724EDCA9800E668A7 /* BackendService+Futures.swift in Sources */,
+				A39530F324EDCA9800E668A7 /* TrustConfiguration.swift in Sources */,
+				A39530F424EDCA9800E668A7 /* TrustValidator.swift in Sources */,
+				A39530E624EDCA9700E668A7 /* Request.swift in Sources */,
+				A39530EE24EDCA9700E668A7 /* Transporting.swift in Sources */,
+				A39530EF24EDCA9700E668A7 /* TransportSession.swift in Sources */,
+				A39530E124EDCA9700E668A7 /* JSONCoder+Container.swift in Sources */,
+				A39530EC24EDCA9700E668A7 /* TransportService.swift in Sources */,
+				A39530F024EDCA9700E668A7 /* BackendServiceProtocol.swift in Sources */,
+				A39530EB24EDCA9700E668A7 /* NetworkActivityIndicatable.swift in Sources */,
+				A39530E924EDCA9700E668A7 /* AnyError.swift in Sources */,
+				A39530F124EDCA9700E668A7 /* BackendService.swift in Sources */,
+				A39530F624EDCA9800E668A7 /* TrustValidatingTransportService.swift in Sources */,
+				A39530F524EDCA9800E668A7 /* CertificateHasher.swift in Sources */,
+				A39530E724EDCA9700E668A7 /* Request.URLRequestCreationStrategy.swift in Sources */,
+				A39530EA24EDCA9700E668A7 /* RecoveryStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2430,6 +2501,7 @@
 		A330A88824EB251F00761951 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = "Examples/Hyperspace-macOSExample/Hyperspace_macOSExample.entitlements";
@@ -2452,6 +2524,7 @@
 		A330A88924EB251F00761951 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = "Examples/Hyperspace-macOSExample/Hyperspace_macOSExample.entitlements";
@@ -2473,18 +2546,24 @@
 		A39530B424EDC80B00E668A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6SP7M2M5S3;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "Hyperspace-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 3.2.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.Hyperspace-macOSExample.Hyperspace-macOS";
@@ -2498,18 +2577,24 @@
 		A39530B524EDC80B00E668A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6SP7M2M5S3;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "Hyperspace-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 3.2.1;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.Hyperspace-macOSExample.Hyperspace-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
