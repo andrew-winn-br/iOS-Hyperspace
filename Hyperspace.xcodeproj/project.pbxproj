@@ -171,6 +171,11 @@
 		A330A88024EB251D00761951 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330A87F24EB251D00761951 /* ViewController.swift */; };
 		A330A88224EB251F00761951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A330A88124EB251F00761951 /* Assets.xcassets */; };
 		A330A88524EB251F00761951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A330A88324EB251F00761951 /* Main.storyboard */; };
+		A39530A524EDC80B00E668A7 /* Hyperspace_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A395309C24EDC80B00E668A7 /* Hyperspace_macOS.framework */; };
+		A39530AC24EDC80B00E668A7 /* Hyperspace_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39530AB24EDC80B00E668A7 /* Hyperspace_macOSTests.swift */; };
+		A39530AE24EDC80B00E668A7 /* Hyperspace_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = A395309E24EDC80B00E668A7 /* Hyperspace_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A39530B124EDC80B00E668A7 /* Hyperspace_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A395309C24EDC80B00E668A7 /* Hyperspace_macOS.framework */; };
+		A39530B224EDC80B00E668A7 /* Hyperspace_macOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A395309C24EDC80B00E668A7 /* Hyperspace_macOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4255B59246E528C009B6D6A /* EncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4255B57246E525F009B6D6A /* EncodingTests.swift */; };
 		B4255B5A246E528D009B6D6A /* EncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4255B57246E525F009B6D6A /* EncodingTests.swift */; };
 		B469328F2413539700D2B650 /* TransportResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469328E2413539700D2B650 /* TransportResult.swift */; };
@@ -235,6 +240,27 @@
 			remoteGlobalIDString = 60AC82E11FF589C200120172;
 			remoteInfo = "Hyperspace-tvOS";
 		};
+		A39530A624EDC80B00E668A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60AC82AD1FF588D500120172 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A395309B24EDC80B00E668A7;
+			remoteInfo = "Hyperspace-macOS";
+		};
+		A39530A824EDC80B00E668A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60AC82AD1FF588D500120172 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A330A87A24EB251D00761951;
+			remoteInfo = "Hyperspace-macOSExample";
+		};
+		A39530AF24EDC80B00E668A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60AC82AD1FF588D500120172 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A395309B24EDC80B00E668A7;
+			remoteInfo = "Hyperspace-macOS";
+		};
 		B4C32C55201EA4B700FC82C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 60AC82AD1FF588D500120172 /* Project object */;
@@ -286,6 +312,17 @@
 				608367A8201D1AF500007247 /* Hyperspace-watchOSExample.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39530B324EDC80B00E668A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A39530B224EDC80B00E668A7 /* Hyperspace_macOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B4C32C57201EA4B700FC82C1 /* Embed Frameworks */ = {
@@ -438,6 +475,12 @@
 		A330A88424EB251F00761951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A330A88624EB251F00761951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A330A88724EB251F00761951 /* Hyperspace_macOSExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hyperspace_macOSExample.entitlements; sourceTree = "<group>"; };
+		A395309C24EDC80B00E668A7 /* Hyperspace_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hyperspace_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A395309E24EDC80B00E668A7 /* Hyperspace_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hyperspace_macOS.h; sourceTree = "<group>"; };
+		A395309F24EDC80B00E668A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39530A424EDC80B00E668A7 /* Hyperspace-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hyperspace-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39530AB24EDC80B00E668A7 /* Hyperspace_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hyperspace_macOSTests.swift; sourceTree = "<group>"; };
+		A39530AD24EDC80B00E668A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4255B57246E525F009B6D6A /* EncodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingTests.swift; sourceTree = "<group>"; };
 		B469328E2413539700D2B650 /* TransportResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportResult.swift; sourceTree = "<group>"; };
 		B476477424136071003C97E9 /* Request.URLRequestCreationStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.URLRequestCreationStrategy.swift; sourceTree = "<group>"; };
@@ -521,6 +564,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A39530B124EDC80B00E668A7 /* Hyperspace_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A395309924EDC80B00E668A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39530A124EDC80B00E668A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39530A524EDC80B00E668A7 /* Hyperspace_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +679,8 @@
 				60AC82B81FF588D500120172 /* Sources */,
 				60AC831F1FF58E8B00120172 /* Tests */,
 				60D6C431201D16D100B3B012 /* Examples */,
+				A395309D24EDC80B00E668A7 /* Hyperspace-macOS */,
+				A39530AA24EDC80B00E668A7 /* Hyperspace-macOSTests */,
 				60AC82B71FF588D500120172 /* Products */,
 				60D6C3E6201CD77400B3B012 /* Frameworks */,
 			);
@@ -638,6 +699,8 @@
 				6083678B201D1AF400007247 /* Hyperspace-watchOSExample.app */,
 				60836797201D1AF500007247 /* Hyperspace-watchOSExample Extension.appex */,
 				A330A87B24EB251D00761951 /* Hyperspace-macOSExample.app */,
+				A395309C24EDC80B00E668A7 /* Hyperspace_macOS.framework */,
+				A39530A424EDC80B00E668A7 /* Hyperspace-macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -887,6 +950,24 @@
 			path = "Hyperspace-macOSExample";
 			sourceTree = "<group>";
 		};
+		A395309D24EDC80B00E668A7 /* Hyperspace-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A395309E24EDC80B00E668A7 /* Hyperspace_macOS.h */,
+				A395309F24EDC80B00E668A7 /* Info.plist */,
+			);
+			path = "Hyperspace-macOS";
+			sourceTree = "<group>";
+		};
+		A39530AA24EDC80B00E668A7 /* Hyperspace-macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				A39530AB24EDC80B00E668A7 /* Hyperspace_macOSTests.swift */,
+				A39530AD24EDC80B00E668A7 /* Info.plist */,
+			);
+			path = "Hyperspace-macOSTests";
+			sourceTree = "<group>";
+		};
 		CB0DE06121E7E5EF00661F0E /* Futures */ = {
 			isa = PBXGroup;
 			children = (
@@ -919,6 +1000,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				60AC831E1FF58E4F00120172 /* Hyperspace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A395309724EDC80B00E668A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39530AE24EDC80B00E668A7 /* Hyperspace_macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1109,15 +1198,54 @@
 				A330A87724EB251D00761951 /* Sources */,
 				A330A87824EB251D00761951 /* Frameworks */,
 				A330A87924EB251D00761951 /* Resources */,
+				A39530B324EDC80B00E668A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A39530B024EDC80B00E668A7 /* PBXTargetDependency */,
 			);
 			name = "Hyperspace-macOSExample";
 			productName = "Hyperspace-macOSExample";
 			productReference = A330A87B24EB251D00761951 /* Hyperspace-macOSExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A395309B24EDC80B00E668A7 /* Hyperspace-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39530B824EDC80B00E668A7 /* Build configuration list for PBXNativeTarget "Hyperspace-macOS" */;
+			buildPhases = (
+				A395309724EDC80B00E668A7 /* Headers */,
+				A395309824EDC80B00E668A7 /* Sources */,
+				A395309924EDC80B00E668A7 /* Frameworks */,
+				A395309A24EDC80B00E668A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hyperspace-macOS";
+			productName = "Hyperspace-macOS";
+			productReference = A395309C24EDC80B00E668A7 /* Hyperspace_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A39530A324EDC80B00E668A7 /* Hyperspace-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39530B924EDC80B00E668A7 /* Build configuration list for PBXNativeTarget "Hyperspace-macOSTests" */;
+			buildPhases = (
+				A39530A024EDC80B00E668A7 /* Sources */,
+				A39530A124EDC80B00E668A7 /* Frameworks */,
+				A39530A224EDC80B00E668A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A39530A724EDC80B00E668A7 /* PBXTargetDependency */,
+				A39530A924EDC80B00E668A7 /* PBXTargetDependency */,
+			);
+			name = "Hyperspace-macOSTests";
+			productName = "Hyperspace-macOSTests";
+			productReference = A39530A424EDC80B00E668A7 /* Hyperspace-macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -1177,6 +1305,15 @@
 						CreatedOnToolsVersion = 11.5;
 						ProvisioningStyle = Automatic;
 					};
+					A395309B24EDC80B00E668A7 = {
+						CreatedOnToolsVersion = 11.5;
+						ProvisioningStyle = Automatic;
+					};
+					A39530A324EDC80B00E668A7 = {
+						CreatedOnToolsVersion = 11.5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A330A87A24EB251D00761951;
+					};
 				};
 			};
 			buildConfigurationList = 60AC82B01FF588D500120172 /* Build configuration list for PBXProject "Hyperspace" */;
@@ -1202,6 +1339,8 @@
 				6083678A201D1AF400007247 /* Hyperspace-watchOSExample */,
 				60836796201D1AF500007247 /* Hyperspace-watchOSExample Extension */,
 				A330A87A24EB251D00761951 /* Hyperspace-macOSExample */,
+				A395309B24EDC80B00E668A7 /* Hyperspace-macOS */,
+				A39530A324EDC80B00E668A7 /* Hyperspace-macOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1312,6 +1451,20 @@
 			files = (
 				A330A88224EB251F00761951 /* Assets.xcassets in Resources */,
 				A330A88524EB251F00761951 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A395309A24EDC80B00E668A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39530A224EDC80B00E668A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1664,6 +1817,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A395309824EDC80B00E668A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39530A024EDC80B00E668A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39530AC24EDC80B00E668A7 /* Hyperspace_macOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1686,6 +1854,21 @@
 			isa = PBXTargetDependency;
 			target = 60AC82E11FF589C200120172 /* Hyperspace-tvOS */;
 			targetProxy = 60AC82EC1FF589C200120172 /* PBXContainerItemProxy */;
+		};
+		A39530A724EDC80B00E668A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A395309B24EDC80B00E668A7 /* Hyperspace-macOS */;
+			targetProxy = A39530A624EDC80B00E668A7 /* PBXContainerItemProxy */;
+		};
+		A39530A924EDC80B00E668A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A330A87A24EB251D00761951 /* Hyperspace-macOSExample */;
+			targetProxy = A39530A824EDC80B00E668A7 /* PBXContainerItemProxy */;
+		};
+		A39530B024EDC80B00E668A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A395309B24EDC80B00E668A7 /* Hyperspace-macOS */;
+			targetProxy = A39530AF24EDC80B00E668A7 /* PBXContainerItemProxy */;
 		};
 		B4C32C56201EA4B700FC82C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2287,6 +2470,94 @@
 			};
 			name = Release;
 		};
+		A39530B424EDC80B00E668A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6SP7M2M5S3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Hyperspace-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.Hyperspace-macOSExample.Hyperspace-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A39530B524EDC80B00E668A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6SP7M2M5S3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Hyperspace-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.Hyperspace-macOSExample.Hyperspace-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A39530B624EDC80B00E668A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Hyperspace-macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.Hyperspace-macOSExample.Hyperspace-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hyperspace-macOSExample.app/Contents/MacOS/Hyperspace-macOSExample";
+			};
+			name = Debug;
+		};
+		A39530B724EDC80B00E668A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Hyperspace-macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.Hyperspace-macOSExample.Hyperspace-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hyperspace-macOSExample.app/Contents/MacOS/Hyperspace-macOSExample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2385,6 +2656,24 @@
 			buildConfigurations = (
 				A330A88824EB251F00761951 /* Debug */,
 				A330A88924EB251F00761951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A39530B824EDC80B00E668A7 /* Build configuration list for PBXNativeTarget "Hyperspace-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39530B424EDC80B00E668A7 /* Debug */,
+				A39530B524EDC80B00E668A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A39530B924EDC80B00E668A7 /* Build configuration list for PBXNativeTarget "Hyperspace-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39530B624EDC80B00E668A7 /* Debug */,
+				A39530B724EDC80B00E668A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
