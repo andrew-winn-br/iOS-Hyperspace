@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Hyperspace_macOS
 
 class ViewController: NSViewController {
 
@@ -22,6 +23,4 @@ class ViewController: NSViewController {
         }
     }
 
-
 }
-

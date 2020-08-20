@@ -171,12 +171,13 @@
 		A330A88024EB251D00761951 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330A87F24EB251D00761951 /* ViewController.swift */; };
 		A330A88224EB251F00761951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A330A88124EB251F00761951 /* Assets.xcassets */; };
 		A330A88524EB251F00761951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A330A88324EB251F00761951 /* Main.storyboard */; };
+		A3862A6B24EF021D00B2744F /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39530DC24EDC99600E668A7 /* BrightFutures.framework */; };
+		A3862A6C24EF021D00B2744F /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A39530DC24EDC99600E668A7 /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A39530A524EDC80B00E668A7 /* Hyperspace_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A395309C24EDC80B00E668A7 /* Hyperspace_macOS.framework */; };
 		A39530AC24EDC80B00E668A7 /* Hyperspace_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39530AB24EDC80B00E668A7 /* Hyperspace_macOSTests.swift */; };
 		A39530AE24EDC80B00E668A7 /* Hyperspace_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = A395309E24EDC80B00E668A7 /* Hyperspace_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A39530B124EDC80B00E668A7 /* Hyperspace_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A395309C24EDC80B00E668A7 /* Hyperspace_macOS.framework */; };
 		A39530B224EDC80B00E668A7 /* Hyperspace_macOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A395309C24EDC80B00E668A7 /* Hyperspace_macOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A39530DD24EDC99600E668A7 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39530DC24EDC99600E668A7 /* BrightFutures.framework */; };
 		A39530E024EDCA9700E668A7 /* Request+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B476477624137A75003C97E9 /* Request+Decodable.swift */; };
 		A39530E124EDCA9700E668A7 /* JSONCoder+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E81B4A120ADE0E100DC1F4E /* JSONCoder+Container.swift */; };
 		A39530E224EDCA9700E668A7 /* CodableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AC83441FF596B600120172 /* CodableContainer.swift */; };
@@ -337,6 +338,17 @@
 				608367A8201D1AF500007247 /* Hyperspace-watchOSExample.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3862A6D24EF021D00B2744F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A3862A6C24EF021D00B2744F /* BrightFutures.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A39530B324EDC80B00E668A7 /* Embed Frameworks */ = {
@@ -598,7 +610,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A39530DD24EDC99600E668A7 /* BrightFutures.framework in Frameworks */,
+				A3862A6B24EF021D00B2744F /* BrightFutures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1247,6 +1259,7 @@
 				A395309724EDC80B00E668A7 /* Headers */,
 				A395309A24EDC80B00E668A7 /* Resources */,
 				A39530F824EDCB4A00E668A7 /* SwiftLint */,
+				A3862A6D24EF021D00B2744F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2548,6 +2561,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -2562,11 +2576,11 @@
 				INFOPLIST_FILE = "Hyperspace-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 3.2.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.Hyperspace-macOSExample.Hyperspace-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.Hyperspace-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -2579,6 +2593,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -2593,10 +2608,10 @@
 				INFOPLIST_FILE = "Hyperspace-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 3.2.1;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.Hyperspace-macOSExample.Hyperspace-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.Hyperspace-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;

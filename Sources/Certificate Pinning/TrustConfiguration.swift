@@ -10,7 +10,7 @@ import Foundation
 
 /** A configuration object which controls how a `TrustValidator` object makes decisions on which connections to accept and which to block. The configuration
     object consists of a series of configuration objects, each designed for a single domain. */
-@available(iOSApplicationExtension 10.0, tvOSApplicationExtension 10.0, watchOSApplicationExtension 3.0, *)
+@available(iOSApplicationExtension 10.0, tvOSApplicationExtension 10.0, watchOSApplicationExtension 3.0, macOSApplicationExtension 10.12, *)
 public struct TrustConfiguration {
     
     /// The `CertificateExpirationPolicy` determines how the validation should proceed when the certificate being pinned has expired.
@@ -154,7 +154,7 @@ public struct TrustConfiguration {
 
 // MARK: - TrustConfiguration conformance to ExpressibleByArrayLiteral
 
-@available(iOSApplicationExtension 10.0, tvOSApplicationExtension 10.0, watchOSApplicationExtension 3.0, *)
+@available(iOSApplicationExtension 10.0, tvOSApplicationExtension 10.0, watchOSApplicationExtension 3.0, macOSApplicationExtension 10.12, *)
 extension TrustConfiguration: ExpressibleByArrayLiteral {
     public typealias ArrayLiteralElement = DomainConfiguration
     

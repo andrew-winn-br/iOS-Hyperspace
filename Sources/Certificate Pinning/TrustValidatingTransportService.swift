@@ -9,7 +9,7 @@
 import Foundation
 
 /// This class builds upon the `Transporting` to offer a quick option for performing server trust validation.
-@available(iOSApplicationExtension 10.0, tvOSApplicationExtension 10.0, watchOSApplicationExtension 3.0, *)
+@available(iOSApplicationExtension 10.0, tvOSApplicationExtension 10.0, watchOSApplicationExtension 3.0, macOSApplicationExtension 10.12, *)
 public class TrustValidatingTransportService: Transporting {
     
     class SessionDelegate: NSObject, URLSessionDelegate {

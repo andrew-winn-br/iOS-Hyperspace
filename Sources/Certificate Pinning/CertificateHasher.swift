@@ -9,7 +9,7 @@
 import Foundation
 import CommonCrypto
 
-@available(iOSApplicationExtension 10.0, tvOSApplicationExtension 10.0, watchOSApplicationExtension 3.0, *)
+@available(iOSApplicationExtension 10.0, tvOSApplicationExtension 10.0, watchOSApplicationExtension 3.0, macOSApplicationExtension 10.12, *)
 struct CertificateHasher {
     
     enum Error: Swift.Error {
@@ -61,7 +61,7 @@ struct CertificateHasher {
 }
 
 // MARK: - Helper
-@available(iOSApplicationExtension 10.0, tvOSApplicationExtension 10.0, watchOSApplicationExtension 3.0, *)
+@available(iOSApplicationExtension 10.0, tvOSApplicationExtension 10.0, watchOSApplicationExtension 3.0, macOSApplicationExtension 10.12, *)
 private extension CertificateHasher {
     
     // MARK: - PublicKey Internal Subtype
