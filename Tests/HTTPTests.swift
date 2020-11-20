@@ -35,6 +35,7 @@ class HTTPTests: XCTestCase {
         
         headerKeys.forEach { (key, value) in
             XCTAssertEqual(key, HTTP.HeaderKey(rawValue: value))
+            XCTAssertEqual(key, HTTP.HeaderKey(stringLiteral: value))
         }
     }
     
@@ -60,19 +61,25 @@ class HTTPTests: XCTestCase {
 
         headerValues.forEach { (key, value) in
             XCTAssertEqual(value, HTTP.HeaderValue(rawValue: key))
+            XCTAssertEqual(value, HTTP.HeaderValue(stringLiteral: key))
         }
     }
     
     func test_ResponseDataString_ReturnsResponseDataAsString() {
         let content = "This is my data"
-        let response = HTTP.Response(code: 200, data: content.data(using: .utf8))
-        let dataString = response.dataString
+        let response = HTTP.Response(request: HTTP.Request(), code: 200, body: content.data(using: .utf8))
+        let dataString = response.bodyString
         
         XCTAssertEqual(dataString, content)
     }
+
+    func test_Response_ReturnsAppropriateMessageForStatus() {
+        let response = HTTP.Response(request: HTTP.Request(), code: 400)
+        XCTAssertEqual(response.statusMessage, "bad request")
+    }
     
     func test_HTTPResponseInitWithCode200_ProducesStatusSuccessOK() {
-        let response = HTTP.Response(code: 200, data: nil)
+        let response = HTTP.Response(request: HTTP.Request(), code: 200, body: nil)
         switch response.status {
         case .success(let status):
             XCTAssertEqual(status, HTTP.Status.Success.ok)
@@ -82,7 +89,7 @@ class HTTPTests: XCTestCase {
     }
     
     func test_HTTPStatusInitWithCode300_ProducesStatusRedirectionMultipleChoices() {
-        let response = HTTP.Response(code: 300, data: nil)
+        let response = HTTP.Response(request: HTTP.Request(), code: 300, body: nil)
         switch response.status {
         case .redirection(let status):
             XCTAssertEqual(status, HTTP.Status.Redirection.multipleChoices)
@@ -92,7 +99,7 @@ class HTTPTests: XCTestCase {
     }
     
     func test_HTTPStatusInitWithCode400_ProducesStatusClientErrorBadRequest() {
-        let response = HTTP.Response(code: 400, data: nil)
+        let response = HTTP.Response(request: HTTP.Request(), code: 400, body: nil)
         switch response.status {
         case .clientError(let status):
             XCTAssertEqual(status, HTTP.Status.ClientError.badRequest)
@@ -102,7 +109,7 @@ class HTTPTests: XCTestCase {
     }
     
     func test_HTTPStatusInitWithCode500_ProducesStatusServerErrorInternalServerError() {
-        let response = HTTP.Response(code: 500, data: nil)
+        let response = HTTP.Response(request: HTTP.Request(), code: 500, body: nil)
         switch response.status {
         case .serverError(let status):
             XCTAssertEqual(status, HTTP.Status.ServerError.internalServerError)
@@ -112,7 +119,7 @@ class HTTPTests: XCTestCase {
     }
     
     func test_HTTPStatusInitWithCode100_ProducesStatusUnknown() {
-        let response = HTTP.Response(code: 100, data: nil)
+        let response = HTTP.Response(request: HTTP.Request(), code: 100, body: nil)
         switch response.status {
         case .unknown(let code):
             XCTAssertEqual(code, 100)
@@ -121,12 +128,12 @@ class HTTPTests: XCTestCase {
         }
     }
 
-    func test_HTTPBodyInitWithEncodable_ProducesProperlyEncodedData() {
+    func test_HTTPBodyWithEncodable_ProducesProperlyEncodedData() {
         let encodable = MockObject(title: "title", subtitle: "subtitle")
         let encoder = JSONEncoder()
 
         do {
-            let body = try HTTP.Body(encodable, encoder: encoder)
+            let body = try HTTP.Body.json(encodable, encoder: encoder)
             let data = try encoder.encode(encodable)
             XCTAssertEqual(body.data, data)
         } catch {
@@ -134,16 +141,25 @@ class HTTPTests: XCTestCase {
         }
     }
 
-    func test_HTTPBodyInitWithEncodableAndContainer_ProducesProperlyEncodedData() {
+    func test_HTTPBodyWithEncodableAndContainer_ProducesProperlyEncodedData() {
         let encodable = MockObject(title: "title", subtitle: "subtitle")
         let encoder = JSONEncoder()
 
         do {
-            let body = try HTTP.Body(encodable, container: MockCodableContainer.self, encoder: encoder)
+            let body = try HTTP.Body.json(encodable, container: MockCodableContainer.self, encoder: encoder)
             let data = try encoder.encode(encodable, in: MockCodableContainer.self)
             XCTAssertEqual(body.data, data)
         } catch {
             XCTFail(error.localizedDescription)
         }
+    }
+
+    func test_HTTPBodyWithFormContent_ProducesProperlyEncodedData() {
+        let content = [("hello world", "hello world")]
+        let encoder = FormURLEncoder()
+
+        let body = HTTP.Body.urlForm(using: content)
+        let data = encoder.encode(content)
+        XCTAssertEqual(body.data, data)
     }
 }
